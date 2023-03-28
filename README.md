@@ -45,3 +45,9 @@ The project is divided into two parts, the server handles the backend and mongoD
 ## keywords
 
 React-JS, node-JS, express, redux, react-router, mongoDB, axios, markdown.
+
+## docker
+
+create .env file to the root, this will then be shared as a volume to the backend and frontend.
+populate .env file with `dbURI` and `jwtSecret`
+docker-compose up to build and run

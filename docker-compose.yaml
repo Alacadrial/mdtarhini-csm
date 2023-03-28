@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend/
+    container_name: cheatsheet_backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - .env:/server/.env
+
+  client:
+    build: ./client/
+    container_name: cheatsheet_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - .env:/react_app/.env
+    #stdin_open: true
+    #tty: true

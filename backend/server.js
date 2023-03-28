@@ -2,8 +2,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const path = require("path");
+const cors = require("cors");
 const app = express();
 dotenv.config();
+
+// Allow Cross Origin Resource Sharing
+app.use(cors());
 
 // Bodyparse middleware
 app.use(express.json());

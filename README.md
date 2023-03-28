@@ -12,20 +12,6 @@ A fullstack application to create and share tabulated cheat sheets using markdow
 - Authentication
 - Fully Responsive on mobile screens (although creating sheets is not very practical on small screens).
 
-## Screenshots
-
-**Home Page**
-
-![Home page screenshot](/screenshots/home-page.png?raw=true)
-
-**Sheet maker**
-
-![Sheet maker screenshot](/screenshots/sheet-maker.png?raw=true)
-
-**sheet example**
-
-![example sheet screenshot](/screenshots/sheet.png?raw=true)
-
 ## Local testing
 
 The project is divided into two parts, the server handles the backend and mongoDB access; and the client where the react frontend is implemented. To run the application locally, clone this repository and run `npm install` both in the main directory and in the client directory. Once the package installation is done, run `npm run dev` which will use [concurrently](https://www.npmjs.com/package/concurrently) and run/watch for modifications in the client and the server simultaneously.
@@ -51,3 +37,7 @@ React-JS, node-JS, express, redux, react-router, mongoDB, axios, markdown.
 create .env file to the root, this will then be shared as a volume to the backend and frontend.
 populate .env file with `dbURI` and `jwtSecret`
 docker-compose up to build and run
+
+## disclaimer
+
+This repository is forked from mdtarhini/cheat-sheet-maker.
